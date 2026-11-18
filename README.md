@@ -98,3 +98,4 @@ quasar dev -m cordova -T android
 ```bash
 quasar build -m cordova -T android
 ```
+Forge WIP smoke test (PR #12).
