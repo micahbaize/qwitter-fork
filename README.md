@@ -17,6 +17,7 @@ npm install
 ## Web Version
 
 ### Start  in development mode
+Run this command from the project root.
 ```bash
 quasar dev
 ```
