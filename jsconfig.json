@@ -6,7 +6,7 @@
         "src/*"
       ],
       "app/*": [
-        "*"
+        "src/*"
       ],
       "components/*": [
         "src/components/*"
@@ -23,8 +23,8 @@
       "boot/*": [
         "src/boot/*"
       ],
-      "vue$": [
-        "node_modules/vue/dist/vue.esm.js"
+      "stores/*": [
+        "src/stores/*"
       ]
     }
   },

@@ -1,15 +1,40 @@
 <template>
-  <q-page class="q-pa-lg">
-    <h4 class="q-mt-none q-mb-md text-weight-bold">About Qwitter</h4>
-    <div class="text-body1">
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt similique molestias dolore, ab libero eius? Voluptatum quaerat architecto ex blanditiis, perspiciatis dolor quisquam labore fuga repellendus minima! Maxime, provident est.</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt similique molestias dolore, ab libero eius? Voluptatum quaerat architecto ex blanditiis, perspiciatis dolor quisquam labore fuga repellendus minima! Maxime, provident est.</p>
-    </div>
+  <q-page class="column items-center justify-center">
+    <q-card class="q-pa-md" style="min-width: 400px">
+      <q-card-section class="text-center text-h5">About Qwitter</q-card-section>
+      
+      <q-card-section>
+        <p>
+          Qwitter is a Twitter clone built with <strong>Vue.js 3</strong>, 
+          <strong>Quasar Framework</strong>, and <strong>Firebase</strong>.
+        </p>
+        
+        <p class="q-mt-md">
+          <strong>Features:</strong>
+        </p>
+        <ul>
+          <li>Post tweets</li>
+          <li>Real-time updates</li>
+          <li>Responsive design</li>
+        </ul>
+      </q-card-section>
+
+      <q-card-actions>
+        <q-btn
+          label="Back to Home"
+          color="primary"
+          to="/"
+          class="full-width"
+        />
+      </q-card-actions>
+    </q-card>
   </q-page>
 </template>
 
 <script>
-export default {
+import { defineComponent } from 'vue'
+
+export default defineComponent({
   name: 'PageAbout'
-}
+})
 </script>
