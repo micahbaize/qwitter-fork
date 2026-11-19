@@ -1,10 +1,12 @@
+// TESTING NOTIFICATIONS
 <template>
-  <div id="q-app">
-    <router-view />
-  </div>
+  <div id="q-app"></div>
 </template>
+
 <script>
-export default {
+import { defineComponent } from 'vue'
+
+export default defineComponent({
   name: 'App'
-}
+})
 </script>

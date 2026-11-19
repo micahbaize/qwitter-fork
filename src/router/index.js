@@ -1,30 +1,35 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
+// TESTING NOTIFICATIONS
+import { route } from 'quasar/wrappers'
+import {
+  createMemoryHistory,
+  createRouter
+} from 'vue-router'
 
 import routes from './routes'
 
-Vue.use(VueRouter)
-
 /*
- * If not building with SSR mode, you can
- * directly export the Router instantiation;
+ * If not building with SPA mode, you will want to
+ * remove the MemoryHistory import and change the mode here.
  *
- * The function below can be async too; either use
- * async/await or return a Promise which resolves
- * with the Router instance.
+ * @quasar/app will automatically inject the router instance in
+ * new AstroComponent() and will also inject the Router class
+ * so you can easily ensure the routes all work
  */
 
-export default function (/* { store, ssrContext } */) {
-  const Router = new VueRouter({
-    scrollBehavior: () => ({ x: 0, y: 0 }),
+export default route(function (/* { store, ssrContext } */) {
+  const createHistory = process.env.SERVER
+    ? createMemoryHistory
+    : (import.meta.env.PROD ? createMemoryHistory : createMemoryHistory)
+
+  const Router = createRouter({
+    scrollBehavior: () => ({ left: 0, top: 0 }),
     routes,
 
-    // Leave these as they are and change in quasar.conf.js instead!
-    // quasar.conf.js -> build -> vueRouterMode
-    // quasar.conf.js -> build -> publicPath
-    mode: process.env.VUE_ROUTER_MODE,
-    base: process.env.VUE_ROUTER_BASE
+    // Leave this as is for <quasar-cli>
+    // it takes care of adding the router instance to the
+    // disabledHistory mode used for SSG
+    history: createHistory(process.env.VUE_ROUTER_BASE)
   })
 
   return Router
-}
+})

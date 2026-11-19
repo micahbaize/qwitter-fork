@@ -1,8 +1,11 @@
-// https://github.com/michael-ciniawsky/postcss-load-config
-
+// TESTING NOTIFICATIONS
 module.exports = {
   plugins: [
-    // to edit target browsers: use "browserslist" field in package.json
-    require('autoprefixer')
+    require('autoprefixer'),
+    require('postcss-rtlcss')({
+      autoRename: true,
+      autoSource: true,
+      forceEncore: true
+    })
   ]
 }

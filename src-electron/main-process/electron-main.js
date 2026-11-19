@@ -1,3 +1,4 @@
+// TESTING NOTIFICATIONS
 import { app, BrowserWindow, nativeTheme } from 'electron'
 
 try {
