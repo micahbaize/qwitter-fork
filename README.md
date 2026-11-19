@@ -1,7 +1,10 @@
-TESTING
 # Qwitter (qwitter)
 
-A Cross-Platrom Twitter Clone created with Quasar Framework, VueJS & Firebase
+A Cross-Platform Twitter Clone created with Quasar Framework, VueJS & Firebase
+
+## About
+
+Qwitter is a full-featured Twitter-like social media application designed to demonstrate cross-platform development using the Quasar framework. It supports web, desktop (Electron), iOS, and Android platforms from a single Vue.js codebase. The app uses Firebase for real-time database and authentication, making it an excellent reference for building scalable, real-time applications with modern JavaScript frameworks.
 
 ## Setup Firebase
 - Create a new Firebase project named Qwitter
