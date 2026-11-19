@@ -1,2 +1,2 @@
-name=Forage
+name=Forge
 environment=demo
