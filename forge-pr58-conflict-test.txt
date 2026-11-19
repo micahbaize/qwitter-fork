@@ -1,2 +1,2 @@
-name=Forge
+name=Forge # service display name
 environment=demo
