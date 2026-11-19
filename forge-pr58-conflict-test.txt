@@ -1,2 +1,2 @@
-name=Forage
+name=Forage # service display name
 environment=demo
