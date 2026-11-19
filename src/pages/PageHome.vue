@@ -1,4 +1,3 @@
-// TESTING NOTIFICATIONS
 <template>
   <q-page class="relative-position">
     <q-scroll-area class="absolute full-width full-height">

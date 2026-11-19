@@ -1,6 +1,12 @@
-// TESTING NOTIFICATIONS
 module.exports = {
   presets: [
-    '@quasar/babel-preset-app'
+    [
+      '@quasar/babel-preset-app',
+      {
+        targets: {
+          node: 'current'
+        }
+      }
+    ]
   ]
 }

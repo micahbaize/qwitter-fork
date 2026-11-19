@@ -1,6 +1,5 @@
-// TESTING NOTIFICATIONS
 <template>
-  <div id="q-app"></div>
+  <router-view />
 </template>
 
 <script>
