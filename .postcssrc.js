@@ -1,4 +1,4 @@
-// https://github.com/michael-ciniawsky/postcss-load-config
+// https://github.com/michael-ciniawsky/postcss-load-config PR58-cancellation-base
 
 module.exports = {
   plugins: [
