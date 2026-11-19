@@ -1,0 +1,1 @@
+Fixture entries for the Stop test: keep the head note.
